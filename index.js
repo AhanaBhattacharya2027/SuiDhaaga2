@@ -16,7 +16,7 @@ const MongoStore = require("connect-mongo");
 dotenv.config();
 const cors = require('cors');
 app.use(cors({
-  origin: "http://localhost:5174", // or your frontend origin
+  origin: "https://sui-dhaaga-frontend.vercel.app/", // or your frontend origin
   credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
