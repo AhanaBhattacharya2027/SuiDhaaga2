@@ -147,6 +147,7 @@ app.post("/api/seller-logged-in", async (req,res)=>{
     }
     else
     {
+        req.session.sellerid=sellerid;
         res.status(201).json({redirectTo:`/seller-dashboard/${sellerid}`});
     }
 });
